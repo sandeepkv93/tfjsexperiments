@@ -127,12 +127,15 @@ body {
   }
 }
 
-#linear-regression-div {
-  padding: 50px;  
-  margin-left:10;
+#menu-toggle {  
+  margin-left:20px;
+  margin-top: 20px;
 }
 
-#quadratic-equation-div {
-  padding: 50px;  
-  margin-left:10;
+#linear-regression-div {
+  margin-left:20px;
+}
+
+#quadratic-equation-div { 
+  margin-left:20px;
 }

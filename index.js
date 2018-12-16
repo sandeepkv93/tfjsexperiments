@@ -1,9 +1,14 @@
-$("#wrapper").toggleClass("toggled");
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
 $('#quadratic-equation-div').hide();
 $('#matrix-inverse-div').hide();
 $('#k-nearest-neighbours-div').hide();
 
 $("#linear-regression-menu").click(function(e) {
+    $("#wrapper").toggleClass("toggled");
     setup();
     $('#linear-regression-div').show();
     $('#quadratic-equation-div').hide();
@@ -12,6 +17,7 @@ $("#linear-regression-menu").click(function(e) {
 });
 
 $("#quadratic-equation-menu").click(function(e) {
+    $("#wrapper").toggleClass("toggled");
     $('#linear-regression-div').hide();
     $('#quadratic-equation-div').show();
     $('#matrix-inverse-div').hide();
@@ -19,6 +25,7 @@ $("#quadratic-equation-menu").click(function(e) {
 });
 
 $("#matrix-inverse-menu").click(function(e) {
+    $("#wrapper").toggleClass("toggled");
     $('#linear-regression-div').hide();
     $('#quadratic-equation-div').hide();
     $('#matrix-inverse-div').show();
@@ -26,6 +33,7 @@ $("#matrix-inverse-menu").click(function(e) {
 });
 
 $("#k-nearest-neighbours-menu").click(function(e) {
+    $("#wrapper").toggleClass("toggled");
     $('#linear-regression-div').hide();
     $('#quadratic-equation-div').hide();
     $('#matrix-inverse-div').hide();
