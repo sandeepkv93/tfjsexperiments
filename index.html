@@ -68,6 +68,12 @@
             <div class="container-fluid">
                 <h1>Matrix Inverse</h1>
             </div>
+            <b>Child:</b> Bus = <input id="childbus" type="number" value="3.00" size="3"> Train = <input id="childtrain" type="number" value="3.50" size="3"><br>
+            <b>Adult:</b> Bus = <input id="adultbus" type="number" value="3.20" size="3"> Train = <input id="adulttrain" type="number" value="3.60" size="3"><br>
+            Total Bus = <input id="totalbus" type="number" value="118.40" size="3"><br>
+            Total Train = <input id="totaltrain" type="number" value="135.20" size="3"><br><br>
+            <input id="myButton124" type="button" class="btn btn-primary" value="Solve how many Children and Adults?" onclick="matrix_inverse()"><br><br>
+            <div id='matrix-inverse-result'></div><br>
         </div>
 
         <div id="k-nearest-neighbours-div">
@@ -84,6 +90,7 @@
     <script src="index.js"></script>
     <script src="linear-regression.js"></script>
     <script src="quadratic-equation.js"></script>
+    <script src="matrix-inverse.js"></script>
 </body>
 
 </html>

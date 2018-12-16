@@ -7,7 +7,7 @@ const learningRate = 0.5;
 const optimizer = tf.train.sgd(learningRate);
 
 function setup() {
-    var canvas = createCanvas(800, 800);
+    var canvas = createCanvas(350, 350);
     canvas.parent('linear-regression-div');
     m = tf.variable(tf.scalar(random(1)));
     b = tf.variable(tf.scalar(random(1)));
