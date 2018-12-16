@@ -25,7 +25,7 @@
                 <li>
                     <a href="#" id='matrix-inverse-menu'>Matrix Inverse</a>
                 </li>
-                <li>
+                <li style="display:none">
                     <a href="#" id="k-nearest-neighbours-menu">K-Nearest Neighbours</a>
                 </li>
             </ul>
@@ -75,11 +75,14 @@
             <input id="myButton124" type="button" class="btn btn-primary" value="Solve how many Children and Adults?" onclick="matrix_inverse()"><br><br>
             <div id='matrix-inverse-result'></div><br>
         </div>
-
+        
         <div id="k-nearest-neighbours-div">
             <div class="container-fluid">
                 <h1>K-Nearest Neighbours</h1>
             </div>
+            Original CSV:<br><textarea id="myArea02" rows="10" cols="60" nowrap="" placeholder="length,width,height,label"></textarea><br><br>
+            The K value: <input id="myKvalue" type="text" value="3" placeholder="5"><br>
+            The unknown: <input id="myText01" type="text" value="4.2, 5.1, 8.6" placeholder="4.2, 5.1, 8.6"><br>
         </div>
         <!-- /#page-content-wrapper -->
     </div>
@@ -91,6 +94,7 @@
     <script src="linear-regression.js"></script>
     <script src="quadratic-equation.js"></script>
     <script src="matrix-inverse.js"></script>
+    <script src="knn.js"></script>
 </body>
 
 </html>
